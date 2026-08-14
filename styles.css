@@ -153,6 +153,13 @@ ul.plain li:last-child {
   margin-right: 14px;
 }
 
+.certs {
+  margin-top: 24px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  color: var(--mute);
+}
+
 footer {
   margin-top: 64px;
   font-family: "IBM Plex Mono", monospace;
