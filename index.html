@@ -17,7 +17,7 @@
       <div class="prompt">matthew@oj:~$ whoami<span class="cursor"></span></div>
 
       <h1>Matthew Oj</h1>
-      <p class="role">Data Engineer / Software Engineer</p>
+      <p class="role">Software Engineer</p>
 
       <hr />
 
@@ -54,10 +54,11 @@
 
       <hr />
 
-      <h2>Freelance / Hackathons</h2>
+      <h2>Projects</h2>
 
       <div class="work-item">
         <div class="work-title">maison-privé</div>
+        <div class="work-meta">Astro, TypeScript, Vercel · Apr 2026 – Jun 2026</div>
         <div class="work-desc">
           Previous production site for a private hospitality brand. Built and
           shipped end to end.
@@ -73,8 +74,65 @@
       </div>
 
       <div class="work-item">
+        <div class="work-title">WPP & Google Cloud Hackathon (3rd Place)</div>
+        <div class="work-meta">
+          Python, Cloud Run, Vertex AI, Vertex AI Generative Models · Sep 2024
+        </div>
+        <div class="work-desc">
+          Designed and deployed a Cloud Run service pulling real-time data from
+          public BigQuery tables to dynamically generate prompts for Vertex AI,
+          rendering AI-generated advertising creatives through a Streamlit
+          frontend, placed 3rd of all competing teams
+        </div>
+      </div>
+      <div class="work-item">
+        <div class="work-title">sims 4 mod manager</div>
+        <div class="work-meta">Python, SHA-256, DBPF Parsing · April 2026</div>
+        <div class="work-desc">
+          Desktop application scanning 88GB+ of files, using SHA-256 caching,
+          binary format parsing for conflict detection, and automated load-order
+          resolution.
+        </div>
+        <div class="work-links">
+          <a
+            href="https://github.com/Matthew-Oj/sims-4-mod-manager"
+            target="_blank"
+            rel="noopener"
+            >code</a
+          >
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="work-title">finance tracker</div>
+        <div class="work-meta">
+          FastAPI, dbt, PostgreSQL, Next.js, Docker · April 2026
+        </div>
+        <div class="work-desc">
+          Production-style data stack: dbt models into PostgreSQL marts, served
+          via a JWT-secured FastAPI backend, visualised in a Next.js dashboard,
+          fully containerised. 13/13 pytest suite covering auth, endpoints, and
+          pagination.
+        </div>
+        <div class="work-links">
+          <a
+            href="https://github.com/Matthew-Oj/personal-finance-platform"
+            target="_blank"
+            rel="noopener"
+            >code</a
+          >
+        </div>
+      </div>
+
+      <div class="work-item">
         <div class="work-title">suck (working title)</div>
-        <div class="work-desc">48hr game jam entry.</div>
+        <div class="work-meta">Python, OpenCV, C#, Unity · Jan 2024</div>
+        <div class="work-desc">
+          48hr Global Game Jam entry. Built a smile-detection script (OpenCV)
+          tied to the jam's humour theme — never made it into the final build ₍˃
+          ⌓ ˂₎. Also contributed to game object design and animation in
+          Unity/C#.
+        </div>
         <div class="work-links">
           <a
             href="https://yarheeguy.itch.io/suck-working-title"
@@ -82,18 +140,6 @@
             rel="noopener"
             >play</a
           >
-        </div>
-      </div>
-
-      <div class="work-item">
-        <div class="work-title">WPP & Google Cloud Hackathon (3rd Place)</div>
-        <div class="work-meta">
-          Python, Cloud Run, Vertex AI, Vertex AI Generative Models · Sep 2024
-        </div>
-        <div class="work-desc">
-          Designed and deployed a Cloud Run service integrating multiple APIs
-          with Vertex AI to automatically generate real-time advertising
-          creatives at scale — placing 3rd out of all competing teams.
         </div>
       </div>
 
@@ -108,27 +154,12 @@
             ></span
           ><span class="sub">PDF</span>
         </li>
-        <li>
-          <span class="label"
-            ><a href="pdf/geo_tech.pdf" target="_blank" rel="noopener"
-              >Geotechnical Report</a
-            ></span
-          ><span class="sub">PDF</span>
-        </li>
       </ul>
-
-      <p class="certs">
-        Skill Badges: Google — Build a Data Warehouse with BigQuery ·
-        Streaming Analytics into BigQuery · Engineer Data for Predictive
-        Modeling with BigQuery ML
-      </p>
 
       <hr />
 
       <footer>matthew@oj:~$ <span id="year"></span></footer>
-      <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-      </script>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
