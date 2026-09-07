@@ -6,16 +6,13 @@ Static single-page personal site. No build step, no dependencies.
 
 - `index.html` — page content
 - `styles.css` — styling
-- `pdf/` — resume, dissertation, and geotechnical report PDFs linked from the page
+- `index.js` — small page script
+- `assets/pdf/` — resume and dissertation PDFs linked from the page
 
 ## Local preview
 
-Open `index.html` directly in a browser, or serve the directory:
-
-```
-npx serve .
-```
+Open `index.html` directly in a browser.
 
 ## Deploy
 
-Push to `main`; hosting picks up static files directly (no build step required).
+Push to `main`; hosting picks up static files directly.
