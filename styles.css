@@ -125,7 +125,8 @@ ul.plain li:last-child {
   padding: 18px 0;
   border-bottom: 1px solid var(--line);
 }
-.work-item:last-of-type {
+.work-item:last-of-type,
+.work-item:has(+ hr) {
   border-bottom: none;
 }
 .work-title {
